@@ -1,0 +1,114 @@
+config_version = 2
+
+[backdrop]
+enabled = true
+
+[bar.default]
+center = [ "spacer_1", "clock", "spacer_2", "control-center" ]
+concave_edge_corners = false
+end = [ "notifications", "group:g2", "group:g3", "session" ]
+margin_edge = 8
+margin_ends = 8
+position = "left"
+radius = 16
+shadow = false
+start = [ "workspaces", "group:g1", "notes", "clipboard", "media" ]
+
+    [[bar.default.capsule_group]]
+    enabled = true
+    fill = "surface_variant"
+    id = "g1"
+    members = [ "wallpaper", "wallhaven" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    enabled = true
+    fill = "surface_variant"
+    id = "g2"
+    members = [ "network", "bluetooth" ]
+    opacity = 1.0
+    padding = 6.0
+
+    [[bar.default.capsule_group]]
+    enabled = true
+    fill = "surface_variant"
+    id = "g3"
+    members = [ "volume", "brightness", "battery" ]
+    opacity = 1.0
+    padding = 6.0
+
+[brightness]
+minimum_brightness = 0.01
+
+[[control_center.shortcuts]]
+type = "wifi"
+
+[[control_center.shortcuts]]
+type = "bluetooth"
+
+[[control_center.shortcuts]]
+type = "caffeine"
+
+[[control_center.shortcuts]]
+type = "power_profile"
+
+[dock]
+shadow = false
+
+[location]
+auto_locate = true
+custom_schedule = true
+sunrise = "06:00"
+sunset = "21:00"
+
+[nightlight]
+enabled = true
+temperature_night = 1000
+
+[plugin_settings."noctalia/notes"]
+panel_placement = "floating"
+
+[plugins]
+enabled = [ "noctalia/notes", "noctalia/timer", "noctalia/translator", "noctalia/wallhaven" ]
+
+[shell]
+date_format = "%F (%A)"
+telemetry_enabled = true
+
+    [shell.panel]
+    shadow = false
+
+    [shell.screenshot]
+    save_to_file = false
+
+[theme]
+builtin = "Ayu"
+community_palette = "Oxocarbon"
+mode = "dark"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "gtk3", "gtk4" ]
+
+[wallpaper]
+fill_mode = "fit"
+transition_on_startup = true
+
+[widget.audio_visualizer]
+bands = 32
+capsule = true
+color_2 = "tertiary"
+mirrored = false
+
+[widget.notes]
+type = "noctalia/notes:notes"
+
+[widget.spacer_1]
+type = "spacer"
+
+[widget.spacer_2]
+type = "spacer"
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
