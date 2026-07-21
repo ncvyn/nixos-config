@@ -8,7 +8,6 @@
     includes = [
       den.batteries.hostname
       den.aspects.kompi.hardware
-      den.aspects.utils.kompi
       den.aspects.apps.gaming
       den.aspects.apps.docker
       den.aspects.apps.winapps
