@@ -20,5 +20,19 @@
         "steam-unwrapped"
       ])
     ];
+
+    nixos = {
+      boot.kernelModules = [ "ntsync" ];
+
+      hardware = {
+        keyboard.qmk.enable = true;
+        nvidia = {
+          modesetting.enable = true;
+          open = true;
+        };
+      };
+
+      services.xserver.videoDrivers = [ "nvidia" ];
+    };
   };
 }
