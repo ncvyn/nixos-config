@@ -49,6 +49,7 @@
     hjem = {
       xdg.config.files = {
         "niri/config.kdl" = {
+          type = "copy";
           source = ./niri-settings.kdl;
         };
       };
