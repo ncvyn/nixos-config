@@ -43,12 +43,12 @@
         noctalia-greeter.enable = true;
       };
     };
-  };
 
-  hjem = {
-    xdg.config.files = {
-      "noctalia/settings.toml" = {
-        source = ./noctalia-settings.toml;
+    hjem = {
+      xdg.config.files = {
+        "noctalia/settings.toml" = {
+          source = ./noctalia-settings.toml;
+        };
       };
     };
   };
