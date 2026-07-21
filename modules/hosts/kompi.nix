@@ -10,6 +10,8 @@
       den.aspects.kompi.hardware
       den.aspects.utils.kompi
       den.aspects.apps.gaming
+      den.aspects.apps.docker
+      den.aspects.apps.winapps
       (den.batteries.unfree [
         "nvidia-x11"
         "nvidia-settings"
