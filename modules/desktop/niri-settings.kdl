@@ -39,7 +39,7 @@ layout {
 spawn-at-startup "noctalia"
 
 hotkey-overlay {
-    // skip-at-startup
+    skip-at-startup
 }
 
 prefer-no-csd
