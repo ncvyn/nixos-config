@@ -165,7 +165,7 @@ binds {
   Mod+Ctrl+Shift+WheelScrollUp   { move-column-left; }
 
   Mod+TouchpadScrollDown { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02+"; }
-  /Mod+TouchpadScrollUp   { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02-"; }
+  Mod+TouchpadScrollUp   { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.02-"; }
 
   Mod+1 { focus-workspace 1; }
   Mod+2 { focus-workspace 2; }
