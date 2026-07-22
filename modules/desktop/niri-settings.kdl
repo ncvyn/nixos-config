@@ -36,8 +36,6 @@ layout {
   }
 }
 
-spawn-at-startup "noctalia"
-
 hotkey-overlay {
   skip-at-startup
 }
@@ -46,7 +44,10 @@ prefer-no-csd
 
 screenshot-path "~/media/images/ss/%Y-%m-%d %H-%M-%S.png"
 
-// http://docs.noctalia.dev/v5/compositor-settings/niri/?section=compositor-settings
+// https://docs.noctalia.dev/v5/compositor-settings/niri/?section=autostart-noctalia
+spawn-at-startup "noctalia"
+
+// https://docs.noctalia.dev/v5/compositor-settings/niri/?section=compositor-settings
 window-rule {
   geometry-corner-radius 20
   clip-to-geometry true
