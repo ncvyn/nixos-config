@@ -34,6 +34,13 @@ layout {
   border {
     off
   }
+
+  // https://docs.noctalia.dev/v5/compositor-settings/niri/?section=option-2-stationary-wallpaper
+  background-color "transparent"
+}
+layer-rule {
+  match namespace="^noctalia-wallpaper"
+  place-within-backdrop true
 }
 
 hotkey-overlay {
