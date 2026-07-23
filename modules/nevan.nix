@@ -16,7 +16,7 @@
 
       den.aspects.utils.cli
       den.aspects.utils.fonts
-      den.aspects.utils.lang
+      den.aspects.utils.langs
     ];
 
     user.extraGroups = [ "input" ];

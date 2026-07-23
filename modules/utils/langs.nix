@@ -1,5 +1,5 @@
 {
-  den.aspects.utils.lang = {
+  den.aspects.utils.langs = {
     nixos =
       { pkgs, ... }:
       {
