@@ -17,6 +17,9 @@
 
           # Python
           uv
+
+          # Go
+          go
         ];
       };
   };
