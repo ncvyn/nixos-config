@@ -1,31 +1,23 @@
 config_version = 2
 
 [backdrop]
-enabled = true
+enabled = false
 
 [bar.default]
-center = [ "spacer_1", "clock", "spacer_2", "control-center" ]
+start = [ "control-center", "spacer_1", "workspaces", "wallpaper", "wallhaven", "notes", "clipboard", "media" ]
+center = [ "clock", "spacer_2", "date" ]
+end = [ "notifications", "group:g1", "group:g2", "session" ]
 concave_edge_corners = false
-end = [ "notifications", "group:g2", "group:g3", "session" ]
 margin_edge = 8
 margin_ends = 8
 position = "left"
 radius = 16
 shadow = false
-start = [ "workspaces", "group:g1", "notes", "clipboard", "media" ]
 
     [[bar.default.capsule_group]]
     enabled = true
     fill = "surface_variant"
     id = "g1"
-    members = [ "wallpaper", "wallhaven" ]
-    opacity = 1.0
-    padding = 6.0
-
-    [[bar.default.capsule_group]]
-    enabled = true
-    fill = "surface_variant"
-    id = "g2"
     members = [ "network", "bluetooth" ]
     opacity = 1.0
     padding = 6.0
@@ -33,7 +25,7 @@ start = [ "workspaces", "group:g1", "notes", "clipboard", "media" ]
     [[bar.default.capsule_group]]
     enabled = true
     fill = "surface_variant"
-    id = "g3"
+    id = "g2"
     members = [ "volume", "brightness", "battery" ]
     opacity = 1.0
     padding = 6.0
@@ -70,7 +62,7 @@ temperature_night = 1000
 panel_placement = "floating"
 
 [plugins]
-enabled = [ "noctalia/notes", "noctalia/timer", "noctalia/translator", "noctalia/wallhaven" ]
+enabled = [ "noctalia/timer", "noctalia/translator", "noctalia/wallhaven" ]
 
 [shell]
 date_format = "%F (%A)"
@@ -101,14 +93,21 @@ capsule = true
 color_2 = "tertiary"
 mirrored = false
 
-[widget.notes]
-type = "noctalia/notes:notes"
+[widget.bluetooth]
+hide_when_no_connected_device = true
+
+[widget.date]
+format = "{:%y %m %d}"
+
+[widget.network]
+show_label = false
 
 [widget.spacer_1]
 type = "spacer"
 
 [widget.spacer_2]
 type = "spacer"
+anchor = true
 
 [widget.wallhaven]
 type = "noctalia/wallhaven:wallhaven"
