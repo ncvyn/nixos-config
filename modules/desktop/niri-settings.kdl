@@ -34,12 +34,11 @@ layout {
   border {
     off
   }
-
-  // https://docs.noctalia.dev/v5/compositor-settings/niri/?section=option-2-stationary-wallpaper
-  background-color "transparent"
 }
+
+// https://docs.noctalia.dev/v5/compositor-settings/niri/?section=option-1-blurred-overview-wallpaper
 layer-rule {
-  match namespace="^noctalia-wallpaper"
+  match namespace="^noctalia-backdrop"
   place-within-backdrop true
 }
 
