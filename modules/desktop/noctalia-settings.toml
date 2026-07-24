@@ -4,15 +4,18 @@ config_version = 2
 enabled = true
 
 [bar.default]
-start = [ "control-center", "spacer_1", "workspaces", "wallpaper", "wallhaven", "notes", "clipboard", "media" ]
-center = [ "clock", "spacer_2", "date" ]
-end = [ "notifications", "group:g1", "group:g2", "session" ]
+start = [ "control-center", "workspaces" ]
+center = [ "date", "spacer_1", "clock" ]
+end = [ "media", "notifications", "clipboard", "wallpaper", "wallhaven", "group:g1", "group:g2", "session" ]
 concave_edge_corners = false
-margin_edge = 8
+margin_edge = 0
 margin_ends = 8
 position = "left"
 radius = 16
-shadow = false
+radius_bottom_left = 0
+radius_top_left = 0
+shadow = true
+contact_shadow = true
 
     [[bar.default.capsule_group]]
     enabled = true
@@ -103,9 +106,6 @@ format = "{:%y %m %d}"
 show_label = false
 
 [widget.spacer_1]
-type = "spacer"
-
-[widget.spacer_2]
 type = "spacer"
 anchor = true
 
