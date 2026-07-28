@@ -1,5 +1,9 @@
-{
+{ den, ... }: {
   den.aspects.desktop.niri = {
+    includes = [
+      den.aspects.fixes.screenshare
+    ];
+
     nixos = { pkgs, ... }: {
       environment.systemPackages = with pkgs; [
         xwayland-satellite
@@ -35,14 +39,6 @@
           xdg-desktop-portal-gnome
           gnome-keyring
         ];
-        config = {
-          common = {
-            default = [ "gnome" ];
-            "org.freedesktop.impl.portal.Access" = [ "gtk" ];
-            "org.freedesktop.impl.portal.Notification" = [ "gtk" ];
-            "org.freedesktop.impl.portal.Secret" = [ "gnome-keyring" ];
-          };
-        };
       };
     };
 
