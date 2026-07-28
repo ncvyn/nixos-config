@@ -29,6 +29,7 @@
       # https://docs.noctalia.dev/v5/templates/official/gtk-qt/?section=gtk-34-applications
       environment.systemPackages = with pkgs; [
         adw-gtk3
+        adwaita-icon-theme
         nwg-look
       ];
 
