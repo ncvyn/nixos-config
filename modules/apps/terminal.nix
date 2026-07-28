@@ -6,13 +6,12 @@
         environment.systemPackages = with pkgs; [ foot ];
       };
 
-    hjem =
-      {
-        xdg.config.files = {
-          "foot/foot.ini" = {
-            source = ./terminal-foot.ini;
-          };
+    hjem = {
+      xdg.config.files = {
+        "foot/foot.ini" = {
+          source = ./terminal-foot.ini;
         };
       };
+    };
   };
 }
