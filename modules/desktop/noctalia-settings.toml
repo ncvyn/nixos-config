@@ -54,8 +54,8 @@ shadow = false
 [location]
 auto_locate = true
 custom_schedule = true
-sunrise = "06:00"
-sunset = "21:00"
+sunrise = "07:30"
+sunset = "21:30"
 
 [nightlight]
 enabled = true
