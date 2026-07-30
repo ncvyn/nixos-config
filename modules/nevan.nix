@@ -11,12 +11,13 @@
       den.aspects.apps.editors
       den.aspects.apps.terminal
 
+      den.aspects.coding.lsp
+
       den.aspects.desktop.niri
       den.aspects.desktop.noctalia
 
       den.aspects.utils.cli
       den.aspects.utils.fonts
-      den.aspects.utils.langs
     ];
 
     user.extraGroups = [ "input" ];

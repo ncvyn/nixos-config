@@ -1,5 +1,5 @@
 {
-  den.aspects.utils.langs = {
+  den.aspects.coding.lsp = {
     nixos =
       { pkgs, ... }:
       {
