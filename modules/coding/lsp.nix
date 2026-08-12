@@ -23,6 +23,7 @@
 
           # C/C++
           gcc
+          libclang
         ];
       };
   };
