@@ -1,4 +1,8 @@
 {
+  "format_on_save": "on",
+  "prettier": {
+    "allowed": true
+  },
   "ui_font_family": ".SystemUIFont",
   "ui_font_weight": 300.0,
   "buffer_line_height": "comfortable",
