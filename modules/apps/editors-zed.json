@@ -12,11 +12,7 @@
     "show_type_hints": false
   },
   "show_edit_predictions": true,
-  "agent_servers": {
-    "gemini": {
-      "type": "registry"
-    }
-  },
+  "agent_servers": {},
   "cli_default_open_behavior": "new_window",
   "project_panel": {
     "dock": "right"
@@ -80,6 +76,12 @@
     }
   },
   "agent": {
+    "thinking_display": "always_collapsed",
+    "sandbox_permissions": {
+      "allow_unsandboxed": true,
+      "network_hosts": ["github.com"],
+      "allow_all_hosts": false
+    },
     "inline_assistant_model": {
       "provider": "copilot_chat",
       "model": "gpt-5.4-mini",
