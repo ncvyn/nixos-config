@@ -10,6 +10,7 @@
           btop
           acpi
           nixfmt-tree
+          gh
         ];
         services.fwupd.enable = true;
       };
