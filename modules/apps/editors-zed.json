@@ -92,24 +92,18 @@
     },
     "favorite_models": [
       {
-        "provider": "deepseek",
-        "model": "deepseek-v4-flash",
+        "provider": "opencode",
+        "model": "go/deepseek-v4-flash",
         "enable_thinking": true,
-        "effort": "high"
-      },
-      {
-        "provider": "deepseek",
-        "model": "deepseek-v4-pro",
-        "enable_thinking": true,
-        "effort": "high"
+        "effort": "max"
       }
     ],
     "default_profile": "write",
     "default_model": {
-      "provider": "deepseek",
-      "model": "deepseek-v4-flash",
+      "provider": "opencode",
+      "model": "go/deepseek-v4-flash",
       "enable_thinking": true,
-      "effort": "high"
+      "effort": "max"
     },
     "model_parameters": []
   },
