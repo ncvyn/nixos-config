@@ -17,10 +17,12 @@
   "project_panel": {
     "dock": "right"
   },
-  "outline_panel": {},
+  "outline_panel": {
+    "dock": "right"
+  },
   "collaboration_panel": {
     "button": false,
-    "dock": "left"
+    "dock": "right"
   },
   "git_panel": {
     "dock": "right"
@@ -76,6 +78,7 @@
     }
   },
   "agent": {
+    "dock": "left",
     "thinking_display": "always_collapsed",
     "sandbox_permissions": {
       "allow_unsandboxed": true,
