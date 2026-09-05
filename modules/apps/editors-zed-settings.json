@@ -114,27 +114,13 @@
   "theme": "Catppuccin Mocha",
   "tab_size": 2,
   "languages": {
-    "TypeScript": {
-      "show_edit_predictions": true
-    },
-    "SQL": {
-      "show_edit_predictions": true
-    },
-    "Markdown": {
-      "show_edit_predictions": false
-    },
-    "Nix": {
-      "show_edit_predictions": false
-    },
     "Python": {
-      "show_edit_predictions": true,
       "tab_size": 4
     },
     "Rust": {
       "tab_size": 4
     },
     "Go": {
-      "show_edit_predictions": true,
       "tab_size": 4
     },
     "CSS": {

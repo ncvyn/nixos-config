@@ -12,7 +12,13 @@
       xdg.config.files = {
         "zed/settings.json" = {
           type = "copy";
-          source = ./editors-zed.json;
+          source = ./editors-zed-settings.json;
+          permissions = "664";
+        };
+        "zed/keymap.json" = {
+          type = "copy";
+          source = ./editors-zed-keymap.json;
+          permissions = "664";
         };
       };
     };
