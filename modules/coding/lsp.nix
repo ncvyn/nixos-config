@@ -26,5 +26,10 @@
           libclang
         ];
       };
+
+    treefmt = {
+      programs.nixfmt.enable = true;
+      settings.on-unmatched = "warn";
+    };
   };
 }
