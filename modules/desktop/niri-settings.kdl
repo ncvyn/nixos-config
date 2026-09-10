@@ -27,8 +27,7 @@ layout {
   default-column-width {}
 
   focus-ring {
-    width 1
-    active-gradient from="#41e287" to="#fd9a49" angle=45
+    off
   }
 
   border {
