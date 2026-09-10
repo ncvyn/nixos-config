@@ -1,21 +1,24 @@
-config_version = 2
+config_version = 14
 
 [backdrop]
 enabled = true
+
+[bar]
+order = [ "default" ]
 
 [bar.default]
 start = [ "control-center", "workspaces" ]
 center = [ "date", "spacer_1", "clock" ]
 end = [ "media", "notifications", "clipboard", "wallpaper", "wallhaven", "group:g1", "group:g2", "session" ]
 concave_edge_corners = false
+contact_shadow = false
 margin_edge = 0
 margin_ends = 8
 position = "left"
 radius = 16
 radius_bottom_left = 0
 radius_top_left = 0
-shadow = true
-contact_shadow = true
+shadow = false
 
     [[bar.default.capsule_group]]
     enabled = true
@@ -64,18 +67,12 @@ temperature_night = 1000
 [plugin_settings."noctalia/notes"]
 panel_placement = "floating"
 
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+
 [plugins]
-enabled = [ "noctalia/timer", "noctalia/translator", "noctalia/wallhaven" ]
-
-[shell]
-date_format = "%F (%A)"
-telemetry_enabled = true
-
-    [shell.panel]
-    shadow = false
-
-    [shell.screenshot]
-    save_to_file = false
+enabled = [ "noctalia/timer", "noctalia/translator", "noctalia/wallhaven", "noctalia/notes" ]
 
 [theme]
 builtin = "Ayu"
@@ -98,6 +95,9 @@ mirrored = false
 
 [widget.bluetooth]
 hide_when_no_connected_device = true
+
+[widget.control-center]
+capsule_radius = "auto"
 
 [widget.date]
 format = "{:%y %m %d}"
