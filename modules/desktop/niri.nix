@@ -2,6 +2,7 @@
   den.aspects.desktop.niri = {
     includes = [
       den.aspects.fixes.screenshare
+      den.aspects.fixes.xwayland-satellite
     ];
 
     nixos = { pkgs, ... }: {
