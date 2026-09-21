@@ -39,6 +39,15 @@ shadow = false
 [brightness]
 minimum_brightness = 0.01
 
+[calendar]
+enabled = true
+event_date_format = "%b %e (%a)"
+
+    [calendar.account.personal_google]
+    color = "primary"
+    name = "Calendar"
+    type = "google"
+
 [[control_center.shortcuts]]
 type = "wifi"
 
@@ -73,6 +82,9 @@ schema_version = 2
 
 [plugins]
 enabled = [ "noctalia/timer", "noctalia/translator", "noctalia/wallhaven", "noctalia/notes" ]
+
+[shell]
+date_format = "%A, %Y-%m-%d"
 
 [theme]
 builtin = "Ayu"
