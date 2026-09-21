@@ -8,7 +8,8 @@
       { ... }:
       {
         nixpkgs.overlays = [
-          (final: prev:
+          (
+            final: prev:
             let
               src = prev.fetchFromGitHub {
                 owner = "Supreeeme";
@@ -28,7 +29,8 @@
                   hash = "sha256-s1gl9eR6Mt2QLrhfcowstPFjzwE/lz4PJhJzWYHoIHg=";
                 };
               });
-            })
+            }
+          )
         ];
       };
   };
