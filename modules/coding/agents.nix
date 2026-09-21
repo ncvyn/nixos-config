@@ -1,5 +1,5 @@
 {
-  den.aspects.coding.llm = {
+  den.aspects.coding.agents = {
     nixos =
       { pkgs, ... }:
       {

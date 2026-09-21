@@ -11,7 +11,7 @@
       den.aspects.apps.editors
       den.aspects.apps.terminal
 
-      den.aspects.coding.llm
+      den.aspects.coding.agents
       den.aspects.coding.lsp
 
       den.aspects.desktop.niri
