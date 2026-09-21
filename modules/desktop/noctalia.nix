@@ -39,10 +39,8 @@
         upower.enable = true;
       };
 
-      programs = {
-        noctalia.enable = true;
-        noctalia-greeter.enable = true;
-      };
+      programs.noctalia.enable = true;
+      services.displayManager.noctalia-greeter.enable = true;
     };
 
     hjem = {
