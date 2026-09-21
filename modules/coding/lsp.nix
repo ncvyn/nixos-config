@@ -16,6 +16,7 @@
           vscode-langservers-extracted
 
           # Python
+          python315
           uv
 
           # Go
