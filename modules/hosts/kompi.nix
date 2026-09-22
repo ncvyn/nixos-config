@@ -32,6 +32,7 @@
       };
 
       services.xserver.videoDrivers = [ "nvidia" ];
+      services.ratbagd.enable = true;
     };
   };
 }
